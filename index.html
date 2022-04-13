@@ -176,20 +176,28 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <form>
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terimakasih</strong> Pesan anda telah terkirim.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <form name="remix-contact-form">
             <div class="mb-3">
               <label for="name" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" />
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" />
+              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
             </div>
             <div class="mb-3">
               <label for="messange" class="form-label">Input Message</label>
-              <textarea class="form-control" id="messange" rows="3"></textarea>
+              <textarea class="form-control" id="messange" rows="3" name="pesan"></textarea>
             </div>
-            <button type="submit" class="btn btn-success">Send to Remix</button>
+            <button type="submit" class="btn btn-success btn-kirim">Send to Remix</button>
+            <button class="btn btn-success d-none btn-loding" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
           </form>
         </div>
       </div>
@@ -212,13 +220,45 @@
   <!-- Akhir Footer -->
 
 
-  <script src="jquery-3.6.0.min.js"></script>
+  <!-- <script src="jquery-3.6.0.min.js"></script> -->
   <script src="script.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
 
+
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbzN5wpRTjPr3WD8jqaSt4JzZyW0mTGb78C2aITmOvQF1Wf4ye76P7-JfeoefspFpEfNFg/exec'
+    const form = document.forms['remix-contact-form'];
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoding = document.querySelector('.btn-loding');
+    const myAlert = document.querySelector('.my-alert');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      // Ketika Tombol submit di-klik
+      // tampilkan tombol loding hilangkan tombol kirim
+      btnLoding.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => {
+          // tampilkan tombol kirim hilangkan tombol loding
+          btnLoding.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          // tampilkan alert
+          myAlert.classList.toggle('d-none');
+          // reset formnya
+          form.reset();
+          console.log('Success!', response);
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
