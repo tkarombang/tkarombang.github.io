@@ -1,38 +1,422 @@
-.jumbotron {
-    /* background-image: url(img/WALLPAPPER3.jpg); */
-    /* background-size: cover; */
-    /* background-position: 0 -80px; */
-    /* background-attachment: fixed..; */
-    padding-top: 6rem;
-    background-color: #0F1217;
-    color: #e6e9f5;
+/* Bootstrap Icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600;800&family=Nunito:wght@200;800&display=swap');
+
+/* variable */
+/* * {
+    overflow: auto;
+} */
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
 }
+
+:root {
+    --primaryColor: #232331;
+    --secondColor: #864879;
+    --ternaryColor: #3F3351;
+    --s: 35px;
+    --c: #E9A6A6;
+    --gradient: linear-gradient(to right, transparent, var(--secondColor), var(--primaryColor));
+}
+
+/* Navbar Costum Background & Icon */
+nav {
+    transition: .5s ease-in-out;
+    padding: 15px !important;
+}
+
+nav.bgAnimasi {
+    padding: 2px 4px !important;
+    opacity: .9 !important;
+    background: var(--primaryColor) !important;
+}
+
+
+.costumUl {
+    width: 300px;
+    /* height: 50px; */
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.costumUl li a {
+    font-size: large;
+    color: var(--c) !important;
+    transition: .2s ease-in-out;
+    /* padding: 10px 10px 10px 25px !important; */
+}
+
+.costumUl li:hover {
+    /* transform: scale(.9) translate(10%, -10%); */
+    padding: 5px;
+    border-radius: 5px;
+    opacity: .8;
+}
+
+.link {
+    visibility: hidden;
+    font-size: 1px;
+    transition: .2s ease-in-out;
+}
+
+.costumUl li:hover .link {
+    /* opacity: 1; */
+    visibility: visible;
+    font-size: 1em;
+}
+
+/* Akhir Navbar Costum Background & Icon*/
+
+/* navbar-toggler & navbar-toggler-icon hilang */
+.costumToggle {
+    display: none;
+}
+
+/* Akhir navbar-toggler & navbar-toggler-icon hilang */
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/herosection.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vmax;
+    height: 100vh;
+    font-family: nunito;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    color: var(--ternaryColor);
+}
+
+.jumbotron h5 {
+    /* background-color: red; */
+    width: 10em;
+    margin-top: 5em;
+    margin-left: 1.5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.jumbotron p {
+    /* background-color: green; */
+    width: 25em;
+    margin-top: 15em;
+    margin-right: 2em;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* Akhir Jumbotron */
+
+
+@media (max-width: 992px) {
+
+    /* Navbar costum navbar-toggler & navbar-toggler-icon */
+    .costumToggle {
+        display: inline;
+    }
+
+    .link {
+        visibility: visible;
+        font-size: 1em;
+        transition: .2s ease-in-out;
+    }
+
+    .costumUl {
+        width: 100vw;
+        /* height: 50px; */
+        /* background-color: black; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .costumUl li a {
+        font-size: large;
+        color: var(--c) !important;
+        transition: .2s ease-in-out;
+        /* padding: 10px 10px 10px 25px !important; */
+    }
+
+    .costumUl li:hover {
+        /* transform: scale(.9) translate(10%, -10%); */
+        padding: 5px;
+        border-radius: 5px;
+        opacity: .8;
+    }
+
+    /* Navbar costum navbar-toggler & navbar-toggler-icon */
+    .costumToggle {
+
+        height: var(--s);
+        aspect-ratio: 1;
+        border: none;
+        padding: 0;
+
+        border-inline: calc(var(--s) / 2) solid #0000;
+        box-sizing: content-box;
+
+        --_g: linear-gradient(var(--c) 20%, #0000 0 80%, var(--c) 0) no-repeat content-box border-box;
+
+        background: var(--_g) 0, var(--_g) 100%;
+        background-size: 50% 100%;
+        position: relative;
+        clip-path: inset(0 25%);
+        --webkit-mask: linear-gradient(90deg, #0000, #000 25% 75%, #0000);
+        cursor: pointer;
+        transition: background-position 0.3s var(--_s, 0.3s), clip-path 0s var(--_s, 0.6s);
+    }
+
+    .costumToggle:before,
+    .costumToggle:after {
+        content: "";
+        position: absolute;
+        inset: 40% 0;
+        background: var(--c);
+        transition: transform 0.3s calc(0.3s - var(--_s, 0.3s));
+    }
+
+    .costumToggle.open {
+        clip-path: inset(0);
+        background-position: -300%, 300%;
+        --_s: 0s;
+    }
+
+    .costumToggle.open:before {
+        border-radius: 5px;
+        transform: rotate(45deg);
+    }
+
+    .costumToggle.open:after {
+        border-radius: 5px;
+        transform: rotate(-45deg);
+    }
+
+    .costumToggle:focus-visible {
+        clip-path: none;
+        --webkit-mask: none;
+        border: none;
+        outline: 2px solid var(--c);
+        outline-offset: 5px;
+    }
+
+    /* Akhir costumNavbarToggler */
+
+    /* Jumbotron */
+    .jumbotron {
+        background-image: url(img/herosection.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100vmax;
+        font-family: nunito;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        color: var(--ternaryColor);
+    }
+
+    .jumbotron h5 {
+        /* background-color: red; */
+        width: 10em;
+        text-align: center;
+        margin-top: 1em;
+        margin-left: 1em;
+        font-weight: 800;
+    }
+
+    .jumbotron p {
+        /* background-color: green; */
+        width: 20em;
+        margin-top: 5em;
+        margin-left: 2em;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    /* Akhir Jumbotron */
+}
+
+@media (max-width: 575.98px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        background-image: url(img/herosectionMobile.png);
+        background-position: left top;
+        background-size: 100vmin;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: nunito;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--ternaryColor);
+    }
+
+    .jumbotron h5 {
+        /* background-color: red; */
+        width: 9em;
+        text-align: center;
+        margin-top: 10em;
+        margin-left: 2em;
+        font-weight: 800;
+    }
+
+    .jumbotron p {
+        /* background-color: green; */
+        width: 15em;
+        margin-top: 1em;
+        text-align: center;
+        margin-left: 8em;
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    /* Akhir Jumbotron */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #distro {
     background-color: #0F1217;
 }
 
+
 section {
     padding-top: 5rem;
 }
 
-/* 
-Photo by <a href="https://unsplash.com/@andredantan19?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andre Tan</a> on <a href="https://unsplash.com/s/photos/clothing-store?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+.gallery-img {
+    width: 100%;
+}
 
-Photo by <a href="https://unsplash.com/@agusu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">agus</a> on <a href="https://unsplash.com/s/photos/clothing-store?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-Photo by <a href="https://unsplash.com/@phocoz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kwame Anim</a> on <a href="https://unsplash.com/s/photos/clothing-store?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-Photo by <a href="https://unsplash.com/@aromatiche?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AROMATEEC</a> on <a href="https://unsplash.com/s/photos/clothing-store?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+#gallery .row>* {
+    padding: 0;
+}
 
-Photo by <a href="https://unsplash.com/@priscilladupreez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Priscilla Du Preez</a> on <a href="https://unsplash.com/s/photos/clothing-store?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+#tools {
+    background-color: #0F1217;
+}
 
-Photo by <a href="https://unsplash.com/@mnzoutfits?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mnz</a> on <a href="https://unsplash.com/s/photos/clothing-store?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
 
-Photo by <a href="https://unsplash.com/@alexandernaglestad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander Naglestad</a> on <a href="https://unsplash.com/s/photos/clothing-store?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
 
-*/
+
+
+.tools-box {
+    position: relative;
+    background-color: #3f444e;
+    border-radius: 10px;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.tools-box::before {
+    content: 'MY';
+    position: absolute;
+    color: #0F1217;
+    font-size: 6em;
+    font-weight: bold;
+    font-style: italic;
+    top: 30px;
+    /* left: -100px; */
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.tools-box:hover::before {
+
+    opacity: 0.2;
+}
+
+.tools-box::after {
+    content: 'TOOLS';
+    position: absolute;
+    color: #0F1217;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.tools-box:hover::after {
+
+    opacity: 0.2;
+}
+
+.boxName {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #0F1217;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transform: translate3d(0, 0, 50px);
+    transition: 0.5s;
+}
+
+.tools-box:hover .boxName {
+    top: 30px;
+    opacity: 1;
+}
+
+.boxBtn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 20px);
+    box-shadow: 0px 0px 5px black;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.tools-box:hover .boxBtn {
+    opacity: 1;
+    bottom: 20px;
+}
+
+.boxImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 100px);
+    max-width: 200px;
+    transition: 0.5s;
+}
+
+.tools-box:hover .boxImage {
+    transform: translate3d(-50%, -50%, 100px) scale(1.2) rotate(-10deg);
+}

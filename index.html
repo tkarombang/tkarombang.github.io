@@ -9,40 +9,40 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css">
   <!-- Akhir My CSS -->
 
-  <title>REMIX</title>
+  <title>Tuang Karombang</title>
 </head>
 
 <body id="home">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color:#343542">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent shadow-sm fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="img/rLight.svg" alt="" width="30" height="31" class="d-inline-block align-text-top">
-        Remix
+        <img src="img/azLogo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top img-fluid">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <button class="costumToggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="costumToggle"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li> -->
+        <ul class="navbar-nav ms-auto costumUl">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link bi bi-info-square-fill" href="#about"><span class="link"> About</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#distro">Distro</a>
+            <a class="nav-link bi bi-tags-fill" href="#distro"><span class="link"> Distro</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link bi bi-image" href="#gallery"><span class="link"> Gallery</span></a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link bi bi-person-lines-fill" href="#contact"><span class="link"> Contact</span></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -50,35 +50,35 @@
   <!-- Akhir Navbar -->
 
   <!-- Jumbotron -->
-  <section class="jumbotron text-center">
-    <img src="img/rLight.svg" alt="remix" width="150" height="150"
-      class="rounded fload-end shadow p-3 mb-2 logoParalax">
-    <h1 class="display-4 h1Paralax">REMIX STORE</h1>
-    <p class="lead">Just Put Your Wear And Now Your Remixing</p>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1"
-        d="M0,320L0,128L49.7,128L49.7,128L99.3,128L99.3,32L149,32L149,96L198.6,96L198.6,224L248.3,224L248.3,32L297.9,32L297.9,224L347.6,224L347.6,224L397.2,224L397.2,0L446.9,0L446.9,96L496.6,96L496.6,160L546.2,160L546.2,128L595.9,128L595.9,256L645.5,256L645.5,224L695.2,224L695.2,128L744.8,128L744.8,192L794.5,192L794.5,128L844.1,128L844.1,256L893.8,256L893.8,32L943.4,32L943.4,160L993.1,160L993.1,160L1042.8,160L1042.8,256L1092.4,256L1092.4,288L1142.1,288L1142.1,128L1191.7,128L1191.7,128L1241.4,128L1241.4,32L1291,32L1291,32L1340.7,32L1340.7,192L1390.3,192L1390.3,64L1440,64L1440,320L1390.3,320L1390.3,320L1340.7,320L1340.7,320L1291,320L1291,320L1241.4,320L1241.4,320L1191.7,320L1191.7,320L1142.1,320L1142.1,320L1092.4,320L1092.4,320L1042.8,320L1042.8,320L993.1,320L993.1,320L943.4,320L943.4,320L893.8,320L893.8,320L844.1,320L844.1,320L794.5,320L794.5,320L744.8,320L744.8,320L695.2,320L695.2,320L645.5,320L645.5,320L595.9,320L595.9,320L546.2,320L546.2,320L496.6,320L496.6,320L446.9,320L446.9,320L397.2,320L397.2,320L347.6,320L347.6,320L297.9,320L297.9,320L248.3,320L248.3,320L198.6,320L198.6,320L149,320L149,320L99.3,320L99.3,320L49.7,320L49.7,320L0,320L0,320Z">
+  <saction class="jumbotron">
+    <!-- <img src="img/azLogo.svg" alt="az" width="200" height="350" class="rounded fload-end shadow p-3 mb-2 azLogo"> -->
+    <h5 class="display-4 name">HMMDMAUA WZRAA NASA</h5>
+    <p class="lead tittle"></p>
+
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffff" fill-opacity="1"
+        d="M0,288L80,261.3C160,235,320,181,480,176C640,171,800,213,960,234.7C1120,256,1280,256,1360,256L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
       </path>
-    </svg>
-  </section>
+    </svg> -->
+  </saction>
   <!-- Akhir Jumbotron -->
 
   <!-- About -->
   <section id="about">
-    <div class="container">
+    <div class="container" data-aos="fade-down">
       <div class="row text-center mb-3">
         <div class="col">
-          <h2>About Remix</h2>
+          <h2>About Me</h2>
         </div>
       </div>
       <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus necessitatibus nihil soluta itaque
             temporibus animi voluptate assumenda quisquam, magni accusantium in tempore porro tenetur ut sit officiis
             minima nulla. Asperiores perferendis nisi rem placeat est odio voluptate, consectetur nobis fugiat repellat
             reiciendis pariatur, minima magnam distinctio aliquid molestias autem officiis.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam unde doloribus hic fugiat consequuntur nam
             maiores perspiciatis beatae nisi magni quaerat minus, voluptate, itaque excepturi?</p>
         </div>
@@ -86,7 +86,7 @@
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#0F1217" fill-opacity="1"
-        d="M0,192L0,224L51.4,224L51.4,224L102.9,224L102.9,192L154.3,192L154.3,224L205.7,224L205.7,64L257.1,64L257.1,192L308.6,192L308.6,160L360,160L360,128L411.4,128L411.4,224L462.9,224L462.9,256L514.3,256L514.3,256L565.7,256L565.7,256L617.1,256L617.1,96L668.6,96L668.6,32L720,32L720,160L771.4,160L771.4,160L822.9,160L822.9,0L874.3,0L874.3,128L925.7,128L925.7,96L977.1,96L977.1,224L1028.6,224L1028.6,64L1080,64L1080,64L1131.4,64L1131.4,0L1182.9,0L1182.9,288L1234.3,288L1234.3,64L1285.7,64L1285.7,32L1337.1,32L1337.1,192L1388.6,192L1388.6,64L1440,64L1440,320L1388.6,320L1388.6,320L1337.1,320L1337.1,320L1285.7,320L1285.7,320L1234.3,320L1234.3,320L1182.9,320L1182.9,320L1131.4,320L1131.4,320L1080,320L1080,320L1028.6,320L1028.6,320L977.1,320L977.1,320L925.7,320L925.7,320L874.3,320L874.3,320L822.9,320L822.9,320L771.4,320L771.4,320L720,320L720,320L668.6,320L668.6,320L617.1,320L617.1,320L565.7,320L565.7,320L514.3,320L514.3,320L462.9,320L462.9,320L411.4,320L411.4,320L360,320L360,320L308.6,320L308.6,320L257.1,320L257.1,320L205.7,320L205.7,320L154.3,320L154.3,320L102.9,320L102.9,320L51.4,320L51.4,320L0,320L0,320Z">
+        d="M0,320L80,309.3C160,299,320,277,480,277.3C640,277,800,299,960,261.3C1120,224,1280,128,1360,80L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
       </path>
     </svg>
   </section>
@@ -102,7 +102,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="zoom-in-up">
           <div class="card">
             <img src="img/mnz-ToLMORRb97Q-unsplash.jpg" class="card-img-top" alt="distro1">
             <div class="card-body">
@@ -111,7 +111,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="zoom-in-up" data-aos-duration="500">
           <div class="card">
             <img src="img/sara-kurfess-5epnzwsphl0-unsplash.jpg" class="card-img-top" alt="distro2">
             <div class="card-body">
@@ -120,7 +120,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="50">
           <div class="card">
             <img src="img/priscilla-du-preez-my5cwTzhmNI-unsplash.jpg" class="card-img-top" alt="distro3">
             <div class="card-body">
@@ -129,7 +129,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="100">
           <div class="card">
             <img src="img/parker-burchfield-tvG4WvjgsEY-unsplash.jpg" class="card-img-top" alt="distro4">
             <div class="card-body">
@@ -138,7 +138,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="150">
           <div class="card">
             <img src="img/erik-mclean--iJgjj33eEk-unsplash.jpg" class="card-img-top" alt="distro5">
             <div class="card-body">
@@ -147,7 +147,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-3" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200">
           <div class="card">
             <img src="img/alexander-naglestad-RFhq0SrrgEg-unsplash.jpg" class="card-img-top" alt="distro6">
             <div class="card-body">
@@ -159,12 +159,151 @@
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1"
-        d="M0,224L0,128L51.4,128L51.4,128L102.9,128L102.9,224L154.3,224L154.3,64L205.7,64L205.7,64L257.1,64L257.1,0L308.6,0L308.6,128L360,128L360,256L411.4,256L411.4,192L462.9,192L462.9,160L514.3,160L514.3,224L565.7,224L565.7,192L617.1,192L617.1,160L668.6,160L668.6,160L720,160L720,224L771.4,224L771.4,256L822.9,256L822.9,64L874.3,64L874.3,160L925.7,160L925.7,224L977.1,224L977.1,64L1028.6,64L1028.6,64L1080,64L1080,96L1131.4,96L1131.4,64L1182.9,64L1182.9,64L1234.3,64L1234.3,192L1285.7,192L1285.7,128L1337.1,128L1337.1,96L1388.6,96L1388.6,96L1440,96L1440,320L1388.6,320L1388.6,320L1337.1,320L1337.1,320L1285.7,320L1285.7,320L1234.3,320L1234.3,320L1182.9,320L1182.9,320L1131.4,320L1131.4,320L1080,320L1080,320L1028.6,320L1028.6,320L977.1,320L977.1,320L925.7,320L925.7,320L874.3,320L874.3,320L822.9,320L822.9,320L771.4,320L771.4,320L720,320L720,320L668.6,320L668.6,320L617.1,320L617.1,320L565.7,320L565.7,320L514.3,320L514.3,320L462.9,320L462.9,320L411.4,320L411.4,320L360,320L360,320L308.6,320L308.6,320L257.1,320L257.1,320L205.7,320L205.7,320L154.3,320L154.3,320L102.9,320L102.9,320L51.4,320L51.4,320L0,320L0,320Z">
+      <path fill="#ffff" fill-opacity="1"
+        d="M0,64L80,101.3C160,139,320,213,480,250.7C640,288,800,288,960,250.7C1120,213,1280,139,1360,101.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
       </path>
     </svg>
   </section>
   <!-- Akhir Distro -->
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Gallery</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/6.png" alt="gambar 1" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/arra.png" alt="gambar 2" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/jinan.png" alt="gambar 3" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/tj.png" alt=" gambar 4" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/bar.png" alt=" gambar 4" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/sang.png" alt=" gambar 4" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/kopi.png" alt="gambar 5" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/loka.png" alt="gambar 6" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/madu.png" alt="gambar 7" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/rn.png" alt="gambar 8" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/roti.png" alt="gambar 9" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/bp.png" alt="gambar 10" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/war.png" alt="gambar 11" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/az.png" alt="gambar 14" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/jabat.png" alt="gambar 15" class="img-fluid gallery-img">
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#">
+            <img src="gallery/daun.png" alt="gambar 16" class="img-fluid gallery-img">
+          </a>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#0F1217" fill-opacity="1"
+        d="M0,160L48,144C96,128,192,96,288,101.3C384,107,480,149,576,181.3C672,213,768,235,864,234.7C960,235,1056,213,1152,181.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Akhir Gallery -->
+
+  <!-- Tools -->
+  <section id="tools">
+    <div class="container">
+      <div class="row text-center mb-3" style="color: #e6e9f5;">
+        <div class="col">
+          <h2>Tools</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="tools-box">
+            <h4 class="boxName">Photoshop</h4>
+            <img src="toolDesign/PsLogo.png" alt="Photoshop" class="boxImage">
+            <a href="#" class="btn btn-dark boxBtn">Show Detail</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="tools-box">
+            <h4 class="boxName">Illustrator</h4>
+            <img src="toolDesign/AiLogo.png" alt="Illustrator" class="boxImage">
+            <a href="#" class="btn btn-dark boxBtn">Show Detail</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="tools-box">
+            <h4 class="boxName">Sketch Book</h4>
+            <img src="toolDesign/sketchbook1.png" alt="sketchBook" class="boxImage">
+            <a href="#" class="btn btn-dark boxBtn">Show Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffff" fill-opacity="1"
+        d="M0,32L60,48C120,64,240,96,360,112C480,128,600,128,720,112C840,96,960,64,1080,53.3C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- akhir Tool -->
 
   <!-- Contact -->
   <section id="contact">
@@ -193,7 +332,7 @@
               <label for="messange" class="form-label">Input Message</label>
               <textarea class="form-control" id="messange" rows="3" name="pesan"></textarea>
             </div>
-            <button type="submit" class="btn btn-success btn-kirim">Send to Remix</button>
+            <button type="submit" class="btn btn-success btn-kirim">Send to Tuang</button>
             <button class="btn btn-success d-none btn-loding" type="button" disabled>
               <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
               Loading...
@@ -204,7 +343,7 @@
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#343542" fill-opacity="1"
-        d="M0,160L0,0L40,0L40,128L80,128L80,32L120,32L120,224L160,224L160,192L200,192L200,224L240,224L240,32L280,32L280,160L320,160L320,288L360,288L360,256L400,256L400,192L440,192L440,288L480,288L480,256L520,256L520,160L560,160L560,256L600,256L600,128L640,128L640,256L680,256L680,96L720,96L720,288L760,288L760,256L800,256L800,128L840,128L840,288L880,288L880,288L920,288L920,128L960,128L960,128L1000,128L1000,224L1040,224L1040,160L1080,160L1080,0L1120,0L1120,160L1160,160L1160,128L1200,128L1200,256L1240,256L1240,64L1280,64L1280,128L1320,128L1320,96L1360,96L1360,192L1400,192L1400,32L1440,32L1440,320L1400,320L1400,320L1360,320L1360,320L1320,320L1320,320L1280,320L1280,320L1240,320L1240,320L1200,320L1200,320L1160,320L1160,320L1120,320L1120,320L1080,320L1080,320L1040,320L1040,320L1000,320L1000,320L960,320L960,320L920,320L920,320L880,320L880,320L840,320L840,320L800,320L800,320L760,320L760,320L720,320L720,320L680,320L680,320L640,320L640,320L600,320L600,320L560,320L560,320L520,320L520,320L480,320L480,320L440,320L440,320L400,320L400,320L360,320L360,320L320,320L320,320L280,320L280,320L240,320L240,320L200,320L200,320L160,320L160,320L120,320L120,320L80,320L80,320L40,320L40,320L0,320L0,320Z">
+        d="M0,160L80,160C160,160,320,160,480,149.3C640,139,800,117,960,112C1120,107,1280,117,1360,122.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
       </path>
     </svg>
   </section>
@@ -212,7 +351,7 @@
 
   <!-- footer -->
   <footer style="background-color:#343542" class="text-center p-3">
-    <p style="color: #e6e9f5">Created with <img src="img/rLight.svg" alt="Bootstrap" width="22" height="22"> Remix By <a
+    <p style="color: #e6e9f5">Created with <img src="img/azLogo.svg" alt="Bootstrap" width="20" height="22"> by <a
         href="https://www.instagram.com/tuangKarombang/" style="color: #e6e9f5" class="fw-bold">Tuang
         Karombang</a>
     </p>
@@ -227,7 +366,49 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    const galleryImage = document.querySelectorAll('.gallery-img');
+    galleryImage.forEach((image, i) => {
+      image.dataset.aos = 'fade-down';
+      image.dataset.aosDelay = i * 100;
+      image.dataset.aosDuration = 1000;
+    });
 
+    AOS.init({
+      once: true,
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/CustomEase.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/TextPlugin.min.js"></script>
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.from('.azLogo', {
+      duration: 1,
+      y: 500,
+      opacity: 0,
+      ease: CustomEase.create("custom", "M0,0 C0.266,0.412 0.264,0.256 0.528,0.334 1.058,0.49 0.78,1 1,1 ")
+    });
+    gsap.from('.navbar', {
+      duration: 1.5,
+      y: '-100%',
+      opacity: 0,
+      ease: CustomEase.create("custom",
+        "M0,0 C0.266,0.412 0.251,0.803 0.274,0.79 0.32,0.762 0.499,0.669 0.608,0.768 0.76,0.906 0.881,1 1,1 ")
+    });
+    gsap.to('.display-4', {
+      delay: 1,
+      duration: 2.5,
+      text: 'MUHAMMAD AZWAR ANAS'
+    });
+    gsap.to('.lead', {
+      duration: 2.5,
+      delay: 1,
+      text: 'Design | Graphics | Creative Logo'
+    });
+  </script>
   <script>
     const scriptURL =
       'https://script.google.com/macros/s/AKfycbzN5wpRTjPr3WD8jqaSt4JzZyW0mTGb78C2aITmOvQF1Wf4ye76P7-JfeoefspFpEfNFg/exec'
@@ -259,6 +440,20 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+  <body>
+    <div class="your-element"></div>
+
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".tools-box"), {
+        max: 10,
+        speed: 400,
+        glare: true
+      });
+    </script>
+  </body>
+
 </body>
 
 </html>
